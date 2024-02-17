@@ -16,7 +16,7 @@ mongoose
 
 app.use(express.json());
 app.use(cookieParser());
- app.get("/",async(req,res)=>{
+ app.get("/fetch",async(req,res)=>{
   res.status(200).json("working")
  });
 
