@@ -20,6 +20,10 @@ app.use(cookieParser());
   res.status(200).json("working")
  });
 
+ app.use("/api/auth",require("./router/User"));
+ app.use("/api/leave", require("./router/Leaves"));
+ app.use("/api/timings",require("./router/Timings"));
+
 
 app.listen(3000, () => {
   console.log('Server is running on port 3000!');
