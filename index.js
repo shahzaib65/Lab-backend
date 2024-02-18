@@ -23,6 +23,7 @@ app.use(cookieParser());
  app.use("/api/auth",require("./router/User"));
  app.use("/api/leave", require("./router/Leaves"));
  app.use("/api/timings",require("./router/Timings"));
+ app.use("/api/sections",require("./router/Sections"));
 
 
 app.listen(3000, () => {
